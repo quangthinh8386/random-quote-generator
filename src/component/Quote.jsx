@@ -28,6 +28,9 @@ const RandomQuote = () => {
     document.getElementById('new-quote').style.backgroundColor = randomColor;
     document.getElementById('tweet-quote').style.backgroundColor = randomColor;
     document.getElementById('icon').style.color = randomColor;
+    // document.querySelector('.quote').style.color = randomColor;
+    // document.querySelector('.author').style.color = randomColor;
+    // document.querySelector('.new-quote').style.color = randomColor;
   };
 
   return (
