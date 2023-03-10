@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import {Button} from 'antd';
 
 const RandomQuote = () => {
   const [quote, setQuote] = useState('');
@@ -28,9 +29,8 @@ const RandomQuote = () => {
     document.getElementById('new-quote').style.backgroundColor = randomColor;
     document.getElementById('tweet-quote').style.backgroundColor = randomColor;
     document.getElementById('icon').style.color = randomColor;
-    // document.querySelector('.quote').style.color = randomColor;
-    // document.querySelector('.author').style.color = randomColor;
-    // document.querySelector('.new-quote').style.color = randomColor;
+    document.querySelector('.quote').style.color = randomColor;
+    document.querySelector('.author').style.color = randomColor;
   };
 
   return (
@@ -39,7 +39,7 @@ const RandomQuote = () => {
         <p className="quote">{quote}</p>
         <p className="author">- {author}</p>
         <div className="buttons">
-          <button className="new-quote" id="new-quote" onClick={getNewQuote}>New Quote</button>
+          <Button className="new-quote" id="new-quote" onClick={getNewQuote}>New Quote</Button>
           <a href={`https://twitter.com/intent/tweet?text="${quote}" -${author}`} target="_blank" rel="noopener noreferrer" id="tweet-quote">
             <i className="fab fa-twitter icon" id="icon"></i>
           </a>
