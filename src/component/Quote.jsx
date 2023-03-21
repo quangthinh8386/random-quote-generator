@@ -41,7 +41,7 @@ const RandomQuote = () => {
         <div className="buttons">
           <Button className="new-quote" id="new-quote" onClick={getNewQuote}>New Quote</Button>
           <a href={`https://twitter.com/intent/tweet?text="${quote}" -${author}`} target="_blank" rel="noopener noreferrer" id="tweet-quote">
-            <i className="fa fa-twitter icon" id="icon"></i>
+            <i className="fa fa-twitter" aria-hidden="true" id="icon"></i>
           </a>
         </div>
       </div>

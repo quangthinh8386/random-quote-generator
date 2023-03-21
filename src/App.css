@@ -38,6 +38,7 @@
 } */
 
 .container {
+  height: 700px;
   display: flex;
   position: relative;
   text-align: center;
@@ -67,9 +68,4 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   text-align: right;
-}
-
-.buttons {
-  display: flex;
-  justify-content: space-between;
 }
